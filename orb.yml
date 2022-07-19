@@ -1,0 +1,19 @@
+version: 2.1
+
+description: Common executors for sharing
+
+display:
+  source_url: https://github.com/kelvintaywl/common-executors-orb
+  home_url: https://github.com/kelvintaywl/common-executors-orb
+
+executors:
+  docker-with-postgresql:
+    resource_class: medium
+    docker:
+      - image: cimg/base:stable
+        user: user
+      - image: library/postgres:13
+        environment:
+          POSTGRES_DB: wiki
+          POSTGRES_USER: Free
+          POSTGRES_PASSWORD: Willy
