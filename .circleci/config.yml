@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs: 
-  common-executors: kelvintaywl/common-executors@0.1.0
+  common-executors: kelvintaywl/common-executors@0.2.0
 
 jobs:
   build:
